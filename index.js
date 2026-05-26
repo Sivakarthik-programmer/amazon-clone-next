@@ -12,9 +12,11 @@ connectDB()
 // Middleware
 // app.use(cors())
 app.use(cors({
-    origin: 'https://amazone-clone-next.netlify.app/',
+    origin: 'https://amazone-clone-next.netlify.app',
     credentials: true,
 }))
+
+
 app.use(express.json()) // parse JSON request body
 
 // Test route
